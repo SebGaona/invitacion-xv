@@ -109,6 +109,13 @@ button:hover {
   transform: translateX(-50%); /* Ajusta la posición al centro */
 }
 
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}	
+
 .scroll {
   width: 100%;
   height: auto;

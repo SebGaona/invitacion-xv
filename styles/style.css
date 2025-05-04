@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background: url(../img/container.png) no-repeat;
+  background: url(../img/container4-1.png) no-repeat;
   background-size: contain;
   background-position: top center;
   width: 80vw; /* Se mantiene flexible */
@@ -104,9 +104,20 @@ button:hover {
   max-width: 150px; /* Evita que sea demasiado grande en pantallas grandes */
   height: auto;
   position: absolute;
-  bottom: 5%; /* Mantiene la imagen en la parte inferior */
+  bottom: 2%; /* Mantiene la imagen en la parte inferior */
   left: 50%; /* La centra */
   transform: translateX(-50%); /* Ajusta la posición al centro */
+}
+
+.scroll {
+  width: 100%;
+  height: auto;
+}
+
+.persona {
+  margin-top: 20px;
+  width: 150%;
+  height: auto;
 }
 
 @keyframes fadeIn {
@@ -162,7 +173,7 @@ button:hover {
 
 @media (max-width: 1194px) {
   .container {
-    background: url("../img/container-3.png") no-repeat;
+    background: url("../img/container-3-1.png") no-repeat;
     background-size: contain;
     background-position: top center;
     width: 95%;

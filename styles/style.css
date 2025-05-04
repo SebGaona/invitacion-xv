@@ -120,6 +120,17 @@ button:hover {
   height: auto;
 }
 
+.countdown {
+  color: #7c4508;
+  font-size: clamp(2rem, 5vw, 4rem);
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

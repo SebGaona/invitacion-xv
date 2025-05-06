@@ -238,7 +238,7 @@ a {
 }
 
 .scroll {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
 
@@ -335,6 +335,16 @@ a {
 
 
 @media (max-width: 1194px) {
+
+  .container {
+    background: url(../img/mobile2-01.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .name {
     font-size: clamp(3.5rem, 10vw, 8.5rem);
     color: #65dc1a;
@@ -419,7 +429,7 @@ a {
   }
 
   .scroll {
-    width: 90%;
+    width: 100%;
   }
 
   .map {
@@ -434,7 +444,6 @@ a {
     background: url(../img/mobile2-01.png) no-repeat;
     background-size: cover;
     background-position: top center;
-    margin-top: 0.5rem;
     width: 100%;
     margin: 0;
     padding: 0;

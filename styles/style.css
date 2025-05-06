@@ -57,28 +57,34 @@ body {
 
 .date {
   color: #7c4508;
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   padding-top: 20px;
   font-weight: 500;
 }
 
 .parents-title {
   padding-top: 40px;
-  color: #dda86f;
-  font-size: 4rem;
+  color: #036a57;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .parents {
   color: #7c4508;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   padding-top: 20px;
 }
 
 .assist {
   padding-top: 40px;
   color: #dda86f;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   padding-bottom: 60px;
+}
+
+.audio {
+  background: none;
+  color:#036a57;
+  border: none;
 }
 
 button {
@@ -93,6 +99,15 @@ button {
   font-weight: 700;
   cursor: pointer;
   margin-bottom: 250px;
+}
+
+.frase {
+  color: #7c4508;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  padding-top: 20px;
+  font-weight: 500;
+  font-family: 'dancing script', cursive;
+  text-align: center;
 }
 
 button:hover {

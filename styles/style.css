@@ -16,6 +16,7 @@ body {
   height: auto;
 }
 
+
 .container {
   background: url(../img/f6-01.png) no-repeat;
   background-size: 100%;
@@ -42,33 +43,64 @@ body {
   margin-top: 20px;
 }
 
-.play1{
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: none;
-  background-color: #65dc1a;
-  color: #023c32;
-  font-size: 1rem;
+.audio-player {
+  background-color: #dda86f;
+  padding: 15px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  height: 0.8rem;
+  width: 80%;
+}
+
+#play {
+  background-color: #dda86f;
+  color: #023c32;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.stop1 {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: none;
-  background-color: #65dc1a;
+#pause {
+  background-color: #dda86f;
   color: #023c32;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
   font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
+
+.play:hover {
+  background-color: #035040;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100px;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #023c32;
+  height: 5px;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #023c32;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
 
 
 .misa {
@@ -142,12 +174,6 @@ body {
   padding-bottom: 60px;
 }
 
-.audio {
-  background: none;
-  color:#65dc1a;
-  border: none;
-}
-
 @keyframes breathing {
   0%, 100% {
     transform: scale(1);
@@ -213,7 +239,7 @@ body {
   height: auto;
   position: absolute;
   bottom: 1.5%; /* Mantiene la imagen en la parte inferior */
-  left: 45%; /* La centra */
+  left: 42%; /* La centra */
   transform: translateX(-50%); /* Ajusta la posición al centro */
 }
 
@@ -517,7 +543,7 @@ audio {
   .assist {
     padding-top: 20px;
     color: #dda86f;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
     padding-bottom: 40px;
   }
 

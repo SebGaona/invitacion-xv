@@ -29,11 +29,23 @@ document.getElementById("button").addEventListener("click", function() {
 setInterval(actualizarCuentaAtras, 1000);
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const audio = document.getElementById("music");
-    
-    audio.play().catch(error => console.log("El navegador bloqueó la reproducción automática."));
-  });
+const audio = document.getElementById("music");
+const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
+const volumeSlider = document.getElementById("volume");
+
+playButton.addEventListener("click", () => {
+    audio.play();
+});
+
+pauseButton.addEventListener("click", () => {
+    audio.pause();
+});
+
+volumeSlider.addEventListener("input", () => {
+    audio.volume = volumeSlider.value;
+});
+
   
   
   

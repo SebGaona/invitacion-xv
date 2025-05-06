@@ -31,8 +31,9 @@ setInterval(actualizarCuentaAtras, 1000);
 
 document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("music");
-    audio.muted = false; // Quitamos el mute después de la carga
+    
     audio.play().catch(error => console.log("El navegador bloqueó la reproducción automática."));
   });
+  
   
   

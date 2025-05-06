@@ -9,11 +9,12 @@ function actualizarCuentaAtras() {
     const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
     document.getElementById("countdown").innerHTML = 
-        `Faltan ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos`;
+        `Faltan ${dias} días - ${horas} horas - ${minutos} minutos y ${segundos} segundos`;
 
     if (diferencia < 0) {
         document.getElementById("countdown").innerHTML = "¡Llegó el 5 de julio!";
     }
 }
+
 
 setInterval(actualizarCuentaAtras, 1000);

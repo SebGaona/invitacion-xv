@@ -296,14 +296,14 @@ a {
 
 
 @media (max-width: 1194px) {
- 
-
   .name {
     font-size: clamp(3rem, 10vw, 8rem);
+    color: #65dc1a;
   }
 
   .lastname {
     font-size: clamp(1.5rem, 5vw, 4rem);
+    color: #65dc1a;
   }
 
   .logo {
@@ -314,16 +314,18 @@ a {
 
   button {
     width: clamp(120px, 50%, 250px);
+    background-color: #65dc1a;
+    color: #d6d5d4;
   }
 
   .parents-title {
     padding-top: 40px;
-    color: #dda86f;
+    color: #65dc1a;
     font-size: clamp(2rem, 5vw, 4rem);
   }
 
   .parents {
-    color: #7c4508;
+    color: #dda86f;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     padding-top: 20px;
   }
@@ -336,10 +338,14 @@ a {
   }
 
   .date {
-    color: #7c4508;
+    color: #dda86f;
     font-size: clamp(2rem, 5vw, 4rem);
     padding-top: 20px;
     font-weight: 500;
+  }
+  .countdown {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    padding: 10px;
   }
 }
 
@@ -351,46 +357,55 @@ a {
   }
 
   .name {
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    color: #65dc1a;
   }
 
   .lastname {
-    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    color: #65dc1a;
   }
 
   .logo {
     width: 20vw;
-    max-width: 100px;
+    max-width: 60px;
   }
 
   button {
-    width: clamp(120px, 50%, 250px);
+    width: clamp(80px, 40%, 150px);
+    background-color: #65dc1a;
+    color: #d6d5d4;
   }
 
   .parents-title {
-    padding-top: 40px;
-    color: #dda86f;
-    font-size: clamp(1rem, 5vw, 2rem);
+    padding-top: 20px;
+    color: #65dc1a;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
   }
 
   .parents {
-    color: #7c4508;
-    font-size: clamp(1rem, 4vw, 2rem);
-    padding-top: 20px;
+    color: #dda86f;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding-top: 10px;
   }
 
   .assist {
-    padding-top: 40px;
+    padding-top: 20px;
     color: #dda86f;
-    font-size: clamp(1.5rem, 4vw, 3rem);
-    padding-bottom: 60px;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding-bottom: 40px;
   }
 
   .date {
-    color: #7c4508;
-    font-size: clamp(2rem, 5vw, 4rem);
-    padding-top: 20px;
+    color: #dda86f;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    padding-top: 10px;
     font-weight: 500;
+  }
+
+  .countdown {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    padding: 5px;
   }
 }
 

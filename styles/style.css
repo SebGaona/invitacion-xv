@@ -393,6 +393,7 @@ a {
   .container {
     background-size: contain;
     background-position: top center;
+    margin-top: 0.5rem;
     width: 95%;
   }
 

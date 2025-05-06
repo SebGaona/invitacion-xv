@@ -242,6 +242,10 @@ a {
   height: auto;
 }
 
+audio {
+  display: none;
+}
+
 .persona {
   margin-top: 20px;
   width: 150%;

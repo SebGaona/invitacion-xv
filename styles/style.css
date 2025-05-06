@@ -32,6 +32,45 @@ body {
   position: relative; /* Necesario para que `.logo` se posicione correctamente */
 }
 
+.player {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.play1{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #65dc1a;
+  color: #023c32;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.stop1 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #65dc1a;
+  color: #023c32;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
 .misa {
   width: 200px;
   height: auto;
@@ -118,7 +157,7 @@ body {
   }
 }
 
-button {
+#button {
   padding: 20px;
   background-color: #65dc1a;
   color: #d6d5d4;
@@ -164,7 +203,7 @@ button {
   text-align: center;
 }
 
-button:hover {
+#button:hover {
   background-color: #469a12;
 }
 
@@ -318,10 +357,11 @@ a {
     max-width: 100px;
   }
 
-  button {
+  #button {
     width: clamp(120px, 50%, 250px);
     background-color: #65dc1a;
     color: #d6d5d4;
+    margin-bottom: 0;
   }
 
   .parents-title {
@@ -391,11 +431,30 @@ a {
 
 @media (max-width: 600px) {
   .container {
-    background-size: contain;
+    background: url(../img/mobile2-01.png) no-repeat;
+    background-size: cover;
     background-position: top center;
     margin-top: 0.5rem;
-    width: 95%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+
+  .division1 {
+    padding-bottom: 1rem;
+  }
+
+  .frase {
+    padding-top: 10px;
+  }
+
+  body {
+    background: #036a57;
+    height: auto;
+    padding: 0 auto;
+    margin: 0;
+  }	
 
   .name {
     font-size: clamp(3rem, 8vw, 6rem);
@@ -419,10 +478,15 @@ a {
     max-width: 60px;
   }
 
-  button {
+  #button {
     width: clamp(80px, 40%, 150px);
     background-color: #65dc1a;
     color: #d6d5d4;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 8rem;
+    padding-bottom: 0;
   }
 
   .parents-title {
@@ -452,6 +516,8 @@ a {
   }
 
   .countdown {
+    width: 100%;
+    text-align: center;
     font-size: clamp(1rem, 2vw, 1.5rem);
     padding: 5px;
   }
@@ -484,11 +550,11 @@ a {
     width: 100%;
   }
 
-  button {
+  #button {
     width: 80%;
     font-size: clamp(1rem, 2vw, 1.5rem);
     color: #023c32;
-    padding-bottom: none;
+    padding-bottom: 15px;
   }
 
   .map{

@@ -110,7 +110,6 @@ body {
 
 button {
   padding: 20px;
-  width: clamp(150px, 25%, 500px);
   background-color: #65dc1a;
   color: #d6d5d4;
   border: none;
@@ -164,7 +163,7 @@ button:hover {
   max-width: 150px; /* Evita que sea demasiado grande en pantallas grandes */
   height: auto;
   position: absolute;
-  bottom: 2%; /* Mantiene la imagen en la parte inferior */
+  bottom: 1%; /* Mantiene la imagen en la parte inferior */
   left: 50%; /* La centra */
   transform: translateX(-50%); /* Ajusta la posición al centro */
 }

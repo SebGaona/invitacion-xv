@@ -9,12 +9,21 @@ function actualizarCuentaAtras() {
     const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
     document.getElementById("countdown").innerHTML = 
-        `Faltan ${dias} días - ${horas} horas - ${minutos} minutos y ${segundos} segundos`;
+        `Faltan ${dias} días &#10084 ${horas} horas &#10084 ${minutos} minutos &#10084 ${segundos} segundos`;
 
     if (diferencia < 0) {
         document.getElementById("countdown").innerHTML = "¡Llegó el 5 de julio!";
     }
 }
+
+document.getElementById("button").addEventListener("click", function() {
+
+    window.open("https://wa.me/4463360783?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20los%20XV!", "_blank");
+
+
+    window.location.href = "assist.html";
+  });
+
 
 
 setInterval(actualizarCuentaAtras, 1000);

@@ -238,8 +238,8 @@ input[type="range"]::-webkit-slider-thumb {
   max-width: 150px; /* Evita que sea demasiado grande en pantallas grandes */
   height: auto;
   position: absolute;
-  bottom: 1.5%; /* Mantiene la imagen en la parte inferior */
-  left: 42%; /* La centra */
+  bottom: 1.3%; /* Mantiene la imagen en la parte inferior */
+  left: 45%; /* La centra */
   transform: translateX(-50%); /* Ajusta la posición al centro */
 }
 
